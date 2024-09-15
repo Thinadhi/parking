@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Parking Ticket</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            text-align: center;  
+            margin: 50px;  
+        }  
+        .ticket {  
+            border: 2px solid #000;  
+            padding: 20px;  
+            display: inline-block;  
+        }  
+        .qr-code {  
+            margin-top: 20px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="ticket">  
+        <h1>Parking Ticket</h1>  
+        <p>Ticket ID: <span id="ticket-id">123456</span></p>  
+        <p>Amount to Pay: $<span id="amount">10.00</span></p>  
+        <p>Scan QR Code to Enter:</p>  
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=ABC-1234&size=150x150" alt="QR Code">  
+    </div>  
+</body>  
